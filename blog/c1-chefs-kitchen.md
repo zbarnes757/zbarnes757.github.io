@@ -1,4 +1,4 @@
-DBC Fireside
+DBC Fireside Chat
 
 My Take on What is to Come
 
