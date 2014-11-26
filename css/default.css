@@ -87,8 +87,11 @@ header img {
 BLOG INDEX
 **********/
 
-.header {
+.blog-header, .blog-list {
 	text-align: center;
+	background-color: #AA7339;
+	color: white;
+	border-radius: 5px;
 }
 
 .blog-list {
@@ -96,21 +99,14 @@ BLOG INDEX
 	width: 44.8%;
 	height: 350px;
 	display: inline-block;
-	text-align: center;
-	color: white;
-	border-radius: 5px;
 }
 
 .blog-list a {
 	color: white;
 }
 
-#tech {
-	background-color: #AA8939;
-}
-
-#cultural {
-	background-color: #303C74;
+#tech, #cultural {
+	background-color: #26596A;
 }
 
 .blog-list ul {
@@ -120,6 +116,32 @@ BLOG INDEX
 
 .home {
 	text-align: center;
+}
+
+/**********
+   Contact Page
+**********/
+
+.contact-head, .contact-body {
+	color: white;	
+	border-radius: 5px;
+}
+
+.contact-head {
+	background-color: #303C74;
+	text-align: center;
+	width: 90%;
+	margin: 0% 5%;
+}
+
+.contact-body {
+	margin: 5%;
+	padding: 5% 25%;
+	background-color: #AA8938;
+}
+
+.contact-body a {
+	color: white;
 }
 
 /**********
