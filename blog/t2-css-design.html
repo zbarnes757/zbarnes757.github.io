@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Your page title here</title>
+  <title>Class vs Id</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../css/blog-stylesheet.css">
 </head>
@@ -10,36 +10,38 @@
       <p><a href="../index.html">Home</a> | <a href="#">About Me</a> | <a href="index.html">Blog</a> | <a href="#">Portfolio</a> | <a href="../contact.html">Contact</a></p>
     </nav>
 
-    <main>
       <div id="blog-content">
-        <h1>Post Title</h1>
-        <h2>The subtitle, if you want it</h2>
+        <h1>Class Vs Id</h1>
+        <h2>The Never Ending Battle</h2>
         <h4>11/29/2014</h4>
 
-        <section>
           <p>
-            Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+            This week we have spent a lot of time learning about the basic technologies that make websites possible. Specifically Html and CSS. They are two different internet languages that go hand and hand with each other. The best way to think of them is as HTML as the skeleton and CSS the skin. HTML provides the structure for your site while CSS makes it smooth and pretty. A concept the CSS uses extensively to make this happen is the class and id selectors.
           </p>
           <p>
-              Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
+            Both class and id selectors are used by css to, surprise, select elements in HTML. You would write a tag in HTML (say a <code><div></code> tag) and then you would add a class or id to that tag (for example <code><div class="im-a-class"></code> or <code><div id="im-an-id"></code>). Now with these added, you could write CSS code that targets this class or id and only what is inside those divs will be affected. So far though, they seem pretty interchangeable. Why would I want to use one over the other?
           </p>
           <p>
-              Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
+            Here is where they differ. Id's are unique. Meaning each element may only have one Id and that Id may only show up once per page. You would use the Id when you want to target something very specific from everything else. Classes on the other hand can be used multiple times in multiple places. You are going to want to use classes to several different things that you want to have the same css affecting them. If you can just live by the rule "id once, but class over and over", you will be in good shape.
           </p>
-        </section>
+
+          <p>
+          Until next time,<br>
+          Zac Barnes
+          </p>
       </div>
 
-      <section id="blog-navigation">
+      <div id="blog-navigation">
         <ul>
           <li><a href="t1-git-blog.html">Working on my Gitness</a></li>
           <li><a href="c1-chefs-kitchen.html">DBC Fireside Chat</a></li>
+          <li><a href="t2-css-design.html">Class Vs Id</a></li>
         </ul> 
-      </section>
+      </div>
 
       <footer>
         <p>&copy;2014 Zac Barnes</p>
       </footer>
-    </div>
-  </main>
+  </div>
 </body>
 
