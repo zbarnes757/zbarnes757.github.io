@@ -99,6 +99,7 @@ BLOG INDEX
 	width: 44.8%;
 	height: 350px;
 	display: inline-block;
+	float: left;
 }
 
 .blog-list a {
