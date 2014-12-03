@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays and Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/blog-stylesheet.css">
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <p><a href="../index.html">Home</a> | <a href="#">About Me</a> | <a href="index.html">Blog</a> | <a href="#">Portfolio</a> | <a href="../contact.html">Contact</a></p>
+    </nav>
+
+      <div id="blog-content">
+        <h1>Arrays and Hashes</h1>
+        <h2>Part of a Nutritious Breakfast</h2>
+        <h4>Today's Date</h4>
+
+          <p>
+            I have a secret... I love Ruby (don't tell her). This week has been dedicated to diving into Ruby for the first time. It has been a great experience. There are so many concepts here that it would take forever to cover them all. I'll just stick to two for now. Arrays and Hashes. Hashes and Arrays. Are you ready for a knowledge bomb to be dropped?
+          </p>
+          <p>
+            Let's take a look at arrays to start. An array is a list of objects. An example looks like [1, 2, 3]. They do not need to be the same type of objects. You can mix and match different things in an array (i.e. [1, 'String', ['another', 'array']] ). These can be super useful for keeping track of lists of information. Something cool about arrays is that you can access each item in the list by what is called the index. Let's look at an eaxample array, array = ['thing', 'another thing', 'something else']. Each object in the array has an index. We start at 0 and count up (cause that's what programmers do). So if I were to type array[0], then we would get 'thing'. array[1] would be 'another thing'. Make sense?
+          </p>
+          <p>
+            Hashes are very similar to arrays. They are lists that have indices that can point to various objects. The major difference is that arrays are great for keeping track of objects in a numbered list whereas hashes don't necessarily need to be in order and there index doesn't have to be a number. I know this sounds confusing so let's take a look. You woud set up a hash like this: hash ={ key => value, key => value }. Let's create a sample one. hash_sample = { 'name' => 'Zac', age => 24 }. Now with an array, I would need to know the order in which each value appeared to be able to call it. But with hashes, I can type hash_sample['name'] and it will return 'Zac'. Pretty cool right? This is very useful when there is a lot of things you want to keep track of but they don't necessarily fit into a nice, neat ordered list. 
+          </p>
+      </div>
+
+      <div id="blog-navigation">
+        <ul>
+          <li><a href="t1-git-blog.html">Working on my Gitness</a></li>
+          <li><a href="c1-chefs-kitchen.html">DBC Fireside Chat</a></li>
+          <li><a href="t2-css-design.html">Class Vs Id</a></li>
+          <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+        </ul> 
+      </div>
+
+      <footer>
+        <p>&copy;2014 Zac Barnes</p>
+      </footer>
+  </div>
+</body>
+
