@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumerability</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/blog-stylesheet.css">
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <p><a href="../index.html">Home</a> | <a href="#">About Me</a> | <a href="index.html">Blog</a> | <a href="#">Portfolio</a> | <a href="../contact.html">Contact</a></p>
+    </nav>
+
+      <div id="blog-content">
+        <h1>Ennumerability</h1>
+        <h2>Enumera-what???</h2>
+        <h4>12/10/2014</h4>
+
+          <p>
+            So by this point we have pretty much established that Ruby is pretty awesome. The kind of girl you can bring home to Mom. She has all these great traits that you look for in a (programming) girl. She is easy to understand. Functional. And has class(es). Ok, joking aside, the language is sweet. One of the super cool things it can do is have collections. Also known as arrays and hashes (if you already forgot, take a look <a href="t3-arrays-hashes.html">here</a>). But let's be honest with ourselves, most programming languages have those in one form or another. What makes Ruby so special is something called the enumerable module. I know that sounds tricky, but by the time I'm done, I hope to have you understanding way more.
+          </p>
+          <p>
+            So the enumerable module is a fancy way of saying that it has lots of iteration methods. "What is an iteration method," you ask. Let me show you. The <code>.each</code> method is the most basic example. <pre><code>
+              array = [1,2,3,4,5]
+              array.each |i| do 
+                puts i
+              end
+
+              1
+              2
+              3
+              4
+              5
+
+            </code></pre>
+            Basically what it does is for each <code>i</code> (this can be anything, it just represents an item in the array) do something. In this case, it was <code>puts</code> that item to the screen. Pretty neat right? Well, the enumerable module adds way more methods that are capable of far more. Today, I want to focus on the method <code>.map</code>.
+          </p>
+          <p>
+            The <code>.map</code> method is going to allow you to take in a collection, modify it, then return a new array based on that method. Let's take a look: <pre><code>
+              [1,2,3,4].map { |i| i*i }
+              
+              [1, 4, 9, 16]
+            </code></pre>
+            As you can see, <code>.map</code> took each element of the array, multiplied it by itself, then printed a new array for us. This can be very useful when you are trying to manipulate a large set of data. You can even store the results in a variable for later use.
+          </p>
+          <p>
+            Hope this helped with your understanding of enumerables!
+          </p>
+      </div>
+
+      <div id="blog-navigation">
+        <ul>
+          <li><a href="t1-git-blog.html">Working on my Gitness</a></li>
+          <li><a href="c1-chefs-kitchen.html">DBC Fireside Chat</a></li>
+          <li><a href="t2-css-design.html">Class Vs Id</a></li>
+          <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+          <li><a href="c3-thinking-style.html">Thinking and Mindsets</a></li>
+          <li><a href="t4-enumerable-methods.html">Enumerability</a></li>
+        </ul> 
+      </div>
+
+      <footer>
+        <p>&copy;2014 Zac Barnes</p>
+      </footer>
+  </div>
+</body>
+
