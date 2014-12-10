@@ -146,6 +146,36 @@ BLOG INDEX
 }
 
 /**********
+   About Me Page
+**********/
+
+.about-head, .about-body {
+	color: white;	
+	border-radius: 5px;
+}
+
+.about-head {
+	background-color: #26596A;
+	text-align: center;
+	width: 90%;
+	margin: 0% 5%;
+}
+
+.about-body {
+	margin: 5%;
+	background-color: #AA7339;
+	display: inline-block;
+}
+
+.about-image, .about-content {
+	width: 45%;
+	margin: 2.5%;
+	float: left;
+	display: inline-block;
+	max-width: 100%
+}
+
+/**********
    Footer
 **********/
 
