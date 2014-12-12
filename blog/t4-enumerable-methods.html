@@ -35,10 +35,10 @@
             Basically what it does is for each <code>i</code> (this can be anything, it just represents an item in the array) do something. In this case, it was <code>puts</code> that item to the screen. Pretty neat right? Well, the enumerable module adds way more methods that are capable of far more. Today, I want to focus on the method <code>.map</code>.
           </p>
           <p>
-            The <code>.map</code> method is going to allow you to take in a collection, modify it, then return a new array based on that method. Let's take a look: <pre><code>
-              [1,2,3,4].map { |i| i*i }
+            The <code>.map</code> method is going to allow you to take in a collection, modify it, then return a new array based on that method. Let's take a look using the same array as before: <pre><code>
+              array.map { |x| x + 5 }
               
-              [1, 4, 9, 16]
+              [6,7,8,9,10]
             </code></pre>
             As you can see, <code>.map</code> took each element of the array, multiplied it by itself, then printed a new array for us. This can be very useful when you are trying to manipulate a large set of data. You can even store the results in a variable for later use.
           </p>
