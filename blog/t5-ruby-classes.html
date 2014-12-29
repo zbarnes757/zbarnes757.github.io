@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/blog-stylesheet.css">
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <p><a href="../index.html">Home</a> | <a href="../aboutme.html">About Me</a> | <a href="index.html">Blog</a> | <a href="#">Portfolio</a> | <a href="../contact.html">Contact</a></p>
+    </nav>
+
+      <div id="blog-content">
+        <h1>Ruby Classes</h1>
+        <h2>Time to get classy</h2>
+        <h4>12/29/2014</h4>
+
+          <p>
+            Ruby is a real classy lady. Meaning she is an object-oriented language that deals with classes. Let's look at that in real world terms. Just like in the real world there are objects, each of which are unique. You are a unique person as much as I am. In that situation, we are both objects and Person would be tha class. Let's take a look at how we would show that in Ruby.
+          </p>
+          <p>
+            <pre><code>
+          1     class Person
+          2
+          3       def initialize(name, age)
+          4         @name = name
+          5         @age = age
+          6         @species = "Homo Sapien"
+          7       end
+          8
+          9       def hello
+          10        puts "Hello! My name is #{@name}."
+          11      end
+          12  
+          13      def say_age
+          14        puts "I am #{@age} years old."
+          15      end
+          16
+          17      def say_species
+          18        puts "I am a #{@species}."
+          19      end
+          20
+          21    end
+          22
+          23    me = Person.new("Zac", 25)
+          24    you = Person.new("Someone", 24)
+            </code></pre>
+          </p>
+          <p>
+            Ok, so let's take a look at what is happening here. We start our class with <code>class Person</code>. We then define a method called <code>initialize</code> and we pass in arguments for name and age on line 3. This is a default method that can be used to do something when the object is first created. What is happening with that weird looking <code>@name</code> and <code>@age</code>? These are known as instance variables. They are unique to the object when it is created. What we are doing is setting the instance variables equal to the arguments of the same name. If you look at line 23, you can see where the object <code>me</code> will have a <code>@name</code> of <code>"Zac"</code> and a <code>@age</code> of <code>25</code>.
+          </p>
+          <p>
+            Starting on line 9 and continuing on to line 19, we see three methods. These methods are unique to the <code>Person</code> class and can be called by any of its objects. Let's try to use one of these methods.
+            <pre><code>
+                me.hello
+                me.say_age
+
+                "Hello! My name is Zac."
+                "I am 24 years old."
+            </code></pre>
+            What we can see here is because <code>me</code> is an object of the <code>Person</code> class, it is able to use all the methods that <code>Person</code> has. This is super useful when you want to create a method in one place but use it over and over again on objects of the same class.
+          </p>
+      </div>
+
+      <div id="blog-navigation">
+        <ul>
+          <li><a href="t1-git-blog.html">Working on my Gitness</a></li>
+          <li><a href="c1-chefs-kitchen.html">DBC Fireside Chat</a></li>
+          <li><a href="t2-css-design.html">Class Vs Id</a></li>
+          <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+          <li><a href="c3-thinking-style.html">Thinking and Mindsets</a></li>
+          <li><a href="t4-enumerable-methods.html">Enumerability</a></li>
+          <li><a href="c4-tech-issues.html">Set Us Free</a></li>
+          <li><a href="t5-ruby-classes.html">Ruby Classes</a></li>
+          <li><a href="c5-feedback.html">Feedback</a></li>
+        </ul> 
+      </div>
+
+      <footer>
+        <p>&copy;2014 Zac Barnes</p>
+      </footer>
+  </div>
+</body>
+
