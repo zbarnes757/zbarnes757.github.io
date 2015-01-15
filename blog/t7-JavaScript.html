@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <title>JavaScript vs Ruby</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/blog-stylesheet.css">
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <p><a href="../index.html">Home</a> | <a href="../aboutme.html">About Me</a> | <a href="index.html">Blog</a> | <a href="#">Portfolio</a> | <a href="../contact.html">Contact</a></p>
+    </nav>
+
+      <div id="blog-content">
+        <h1>JavaScript vs Ruby</h1>
+        <h2>What are the differences? What are the similarities?</h2>
+        <h4>01/15/2015</h4>
+
+          <p>
+            This week we are starting to dive into JavaScript so I wanted to try and highlight a difference between it and Ruby. One aspect of computers that makes them particularly powerful and useful is the ability to cycle through lots of information very quickly. We achieve this with something called looping. Most languages support looping in one form or another. Both JavaScript and Ruby have the ability to loop but they do so in different ways. They share a loop known as a 'for' loop but they use them in different ways. 
+          </p>
+          <p>
+            Let us see how a JavaScript 'for' loop looks first then we will break it down. 
+            <pre><code>
+          for (i = 0; i <= 10; i++) {
+            console.log("Hello World!")
+          }    
+            
+            </code></pre>
+            We start out by declaring it is a <code>for</code> loop. Simple enough. What follows that may confuse you so let's take it step by step. <code>i = 0</code> is declaring our counter variable. We want to start at 0 in this case. We can change that to any number we want to start at. Next is <code>i <= 10</code>. This is how long we are doing it. In English, it would read 'while i is less than or equal to 10'. The last part is <code>i++</code>. This tells us how to count. The <code>++</code> means add 1. So this part is telling the program to add one to i after each time through the loop. Everything between the <code>{}</code>'s will run each time the program loops. Pretty cool, right?
+          </p>
+          <p>
+            Next, let us see how Ruby does it.
+            <pre><code>
+          for i in 1..10
+            puts "Hello World!"
+          end    
+            </code></pre>
+            Again, we start out by declaring this as a <code>for</code> loop. Next is where it can get a little tricky. <code>i in 1..10</code> in English would read 'each number in between 1 and 10'. The program will start at 1 and count all the way up to 10. Each time, it will run the code inside the loop. In this case, that would be <code>puts "Hello World!"</code>. As you can see it is a very simple set up yet can be very useful.
+          </p>
+      </div>
+
+      <div id="blog-navigation">
+        <ul>
+          <li><a href="t1-git-blog.html">Working on my Gitness</a></li>
+          <li><a href="c1-chefs-kitchen.html">DBC Fireside Chat</a></li>
+          <li><a href="t2-css-design.html">Class Vs Id</a></li>
+          <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+          <li><a href="c3-thinking-style.html">Thinking and Mindsets</a></li>
+          <li><a href="t4-enumerable-methods.html">Enumerability</a></li>
+          <li><a href="c4-tech-issues.html">Set Us Free</a></li>
+          <li><a href="t5-ruby-classes.html">Ruby Classes</a></li>
+          <li><a href="c5-feedback.html">Feedback</a></li>
+          <li><a href="t6-oop-concepts.html">Object-oriented vs Functional</a></li>
+          <li><a href="c6-stereotype-threat.html">Stereotype Threat</a></li>
+          <li><a href="t7-JavaScript.html">JavaScript vs Ruby</a></li>
+          <li><a href="c7-values.html">Values</a></li>
+        </ul> 
+      </div>
+
+      <footer>
+        <p>&copy;2014 Zac Barnes</p>
+      </footer>
+  </div>
+</body>
+
