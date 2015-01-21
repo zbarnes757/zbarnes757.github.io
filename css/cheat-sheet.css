@@ -1,0 +1,26 @@
+body {
+	background-color: #41817F;
+}
+
+#header {
+	text-align: center;
+	color: white;
+}
+
+.cheat-sheet-content {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 35px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+h2, h4, ul {
+	margin-bottom: 0px;
+}
+
+.sub-header {
+	text-align: center;
+	width: 100%;
+}

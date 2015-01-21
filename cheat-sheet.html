@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cheat Sheet</title>
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="stylesheet" type="text/css" href="css/cheat-sheet.css">
+</head>
+<body>
+  <h1 id="header">Zac and Scott's Ruby Cheat Sheet</h1>
+  
+  <section class="cheat-sheet-content">
+    <h2 class="sub-header">Hashes</h2>
+    <h4>Description</h4>
+    <p>
+     A <em>Hash</em> is a dictionary-like collection of unique keys and their values. 
+     Also called associative arrays, they are similar to Arrays, but where an Array 
+     uses integers as its index, a Hash allows you to use any object type.
+    </p>
+    <h4>Methods</h4>
+    <ul>
+      <li><code>#include?</code>: Returns true if the given key is present in hash. </li>
+      <li><code>#length</code>: Returns the number of key-value pairs in the hash. </li>
+      <li><code>#shift</code>: Removes a key-value pair from hash and returns it as the two-item array [ key, value ], 
+      or the hash’s default value if the hash is empty.</li>
+      <li><code>#to_a</code>: Converts hash to a nested array of [ key, value ] arrays. </li>
+    </ul>
+  </section>
+  
+  <section class="cheat-sheet-content">
+    <h2 class="sub-header">Arrays</h2>
+    <h4>Description</h4>
+    <p>
+     <em>Arrays</em> are ordered, integer-indexed collections of any object.  Array indexing starts at 0, 
+     as in C or Java. A negative index is assumed to be relative to the end of the array---that is, 
+     an index of -1 indicates the last element of the array, -2 is the next to last element in the array, 
+     and so on.
+    </p>
+    <h4>Methods</h4>
+    <ul>
+      <li><code>#concat(other_array)</code>: Appends the elements of other_array to self. </li>
+      <li><code>#each {|item| block}</code>: Calls the given block once for each element in self, passing that element as a parameter. </li>
+      <li><code>#sample</code>: Choose a random element from the array</li>
+      <li><code>#empty?</code>: Returns true if the array contains no elements</li>
+    </ul>
+  </section>
+  
+  <section class="cheat-sheet-content">
+    <h2 class="sub-header">Strings</h2>
+    <h4>Description</h4>
+    <p>
+     A <em>String</em> object holds and manipulates an arbitrary 
+     sequence of bytes, typically representing characters.
+     An example is "Hello World!"
+    </p>
+    <h4>Methods</h4>
+    <ul>
+      <li><code>#length</code>: Returns the character length of the string</li>
+      <li><code>#downcase</code>: Returns a copy of the string with all uppercase letters replaced with their lowercase counterparts</li>
+      <li><code>#chars</code>: Returns an array of characters in the string</li>
+      <li><code>#capitalize</code>: Modifies the string by converting the first character to uppercase and the remainder to lowercase</li>
+    </ul>
+  </section>
+  
+  <section class="cheat-sheet-content">
+    <h2 class="sub-header">Integers</h2>
+    <h4>Description</h4>
+    <p>
+     Holds <em>Integer</em> values that can be represented in a native machine word.
+     Examples being 1 or 10.
+    </p>
+    <h4>Methods</h4>
+    <ul>
+      <li><code>#even?</code>: Returns true if int is an even number.</li>
+      <li><code>#next</code>: Returns the Integer equal to <code>int + 1</code></li>
+      <li><code>#to_s</code>: Returns a string containing the representation of the integer</li>
+      <li><code>#size</code>: Returns the number of bytes in the machine representation of the integer</li>
+    </ul>
+  </section>
+</body>
+</html>
