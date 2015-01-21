@@ -33,12 +33,13 @@ header img {
 
 .link-box {
 	margin: 2.5%;
-	width: 44.8%;
+	width: 44.5%;
 	height: 250px;
 	display: inline-block;
 	text-align: center;
 	line-height: 250px;
 	border-radius: 5px;
+	border-style: none outset outset none;
 }
 
 .link-box:hover {
