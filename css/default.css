@@ -14,13 +14,7 @@ header {
 }
 header img, h2 {
 	display: inline-block;
-}
-
-header h2 {
-}
-
-header img {
-
+	font-size: 2.5em;
 }
 
 /**********
@@ -49,6 +43,7 @@ header img {
 .link-box a {
 	text-decoration: none;
 	color: white;
+	font-size: 1.5em;
 }
 
 #about {
